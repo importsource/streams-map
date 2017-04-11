@@ -1,6 +1,8 @@
 package com.importsource.java8.streams;
 
-import org.springframework.core.style.ToStringCreator;
+import com.importsource.onetest.After;
+import com.importsource.onetest.Function;
+import com.importsource.onetest.OneTest;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -30,6 +32,8 @@ public class ListDemo {
         //Java 8
         List<String> collect = staff.stream().map(x -> x.getName()).collect(Collectors.toList());
         System.out.println(collect); //[importsource, messi, xavi]
+
+
     }
 }
 
